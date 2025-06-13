@@ -3,5 +3,6 @@ import type { ComponentType } from "react"
 export type RouteItem = {
      path: string,
      element: ComponentType,
-     layout?: ComponentType
+     layout?: ComponentType,
+     children?: RouteItem[]
 }
