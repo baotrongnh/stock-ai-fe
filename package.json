@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@iconify/react": "^6.0.0",
     "@mantine/carousel": "^8.1.0",
     "@mantine/core": "^8.1.0",
     "@mantine/dates": "^8.1.0",
@@ -17,6 +18,7 @@
     "@mantine/modals": "^8.1.0",
     "@mantine/notifications": "^8.1.0",
     "@tailwindcss/vite": "^4.1.10",
+    "axios": "^1.9.0",
     "dayjs": "^1.11.13",
     "embla-carousel": "^8.5.2",
     "embla-carousel-react": "^8.5.2",

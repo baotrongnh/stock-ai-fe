@@ -1,4 +1,4 @@
-import { Home } from '../pages'
+import { Home, Login, Register } from '../pages'
 /*
 Add new route:
 Ex: 
@@ -7,7 +7,9 @@ import {Login} from '../pages'
 */
 
 const publicRoutes = [
-     { path: '/', element: Home }
+     { path: '/', element: Home },
+     { path: '/login', element: Login },
+     { path: '/register', element: Register }
 ]
 
 export { publicRoutes }
