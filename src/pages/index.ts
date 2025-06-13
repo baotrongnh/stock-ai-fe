@@ -1,3 +1,4 @@
-import Home from "./Home"
+import Home from "./Home/Home"
+import Hero from "./Home/components/Hero"
 
-export { Home }
+export { Home, Hero }

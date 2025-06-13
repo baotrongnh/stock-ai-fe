@@ -1,11 +1,12 @@
 import React from 'react'
+import { Footer, Header } from '../components'
 
 export default function DefaultLayout({ children }: { children: React.ReactElement }) {
      return (
           <>
-               <h1>Header</h1>
+               <Header />
                {children}
-               <h1>Footer</h1>
+               <Footer />
           </>
      )
 }
