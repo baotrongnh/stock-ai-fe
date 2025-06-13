@@ -1,9 +1,8 @@
-import './App.css'
-import '@mantine/core/styles.css'
 import { MantineProvider } from '@mantine/core'
-import { publicRoutes } from './routes'
-import { Route, Routes } from 'react-router'
-import type { RouteItem } from './types/route.type'
+import '@mantine/core/styles.css'
+import { Routes } from 'react-router'
+import './App.css'
+import { adminRoutes, publicRoutes, renderRoutes } from './routes'
 
 function App() {
 
@@ -12,12 +11,8 @@ function App() {
       <MantineProvider>
         <Routes>
 
-          {publicRoutes.map((route: RouteItem, index: number) => {
-            const Page = route.element
-            return (
-              <Route key={index} path={route.path} element={<Page />} />
-            )
-          })}
+          {renderRoutes(publicRoutes)}
+          {renderRoutes(adminRoutes)}
 
         </Routes>
       </MantineProvider>

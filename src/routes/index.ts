@@ -1,13 +1,23 @@
+import { AdminLayout, DefaultLayout } from '../layouts'
 import { Home } from '../pages'
-/*
-Add new route:
-Ex: 
-import {Login} from '../pages'
-{ path: '/login', element: Login }
-*/
+import { Dashboard } from '../pages/admin'
+import { renderRoutes } from './renderRoute'
 
 const publicRoutes = [
-     { path: '/', element: Home }
+     {
+          path: '/home', element: Home, layout: DefaultLayout,
+     }
 ]
 
-export { publicRoutes }
+const adminRoutes = [
+     {
+          path: '/admin',
+          element: AdminLayout,
+          layout: null,
+          children: [
+               { path: 'dashboard', element: Dashboard, layout: null }
+          ]
+     }
+]
+
+export { adminRoutes, publicRoutes, renderRoutes }
