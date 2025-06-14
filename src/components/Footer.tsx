@@ -22,7 +22,7 @@ export default function Footer() {
     return (
         <footer className="flex flex-col mt-16" style={{ backgroundColor: "#fff", color: "#222", borderTop: '1px solid #e6e7e6' }}>
             {/*Main*/}
-            <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 py-12 ">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
                     {/*Thông tin*/}
                     <div className="flex flex-col gap-5 md:col-span-5 col-span-1 ">

@@ -7,7 +7,7 @@ export default function Home() {
           <>
                {/*Header*/}
                <Header></Header>
-               <div className="min-h-screen bg-gradient-to-b from-green-100 to-white flex flex-col px-4">
+               <div className="min-h-screen bg-gradient-to-b from-green-100 to-white flex flex-col w-full ">
                     <Hero></Hero>
                </div>
           </>
