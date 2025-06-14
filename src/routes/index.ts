@@ -11,7 +11,7 @@ import {Login} from '../pages'
 */
 
 const publicRoutes = [
-     { path: '/home', element: Home, layout: DefaultLayout },
+     { path: '/', element: Home, layout: DefaultLayout },
      { path: '/login', element: Login, layout: null },
      { path: '/register', element: Register, layout: null },
 ]
