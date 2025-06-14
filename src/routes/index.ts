@@ -11,9 +11,9 @@ import {Login} from '../pages'
 */
 
 const publicRoutes = [
-     {
-          path: '/home', element: Home, layout: DefaultLayout,
-     }
+     { path: '/home', element: Home, layout: DefaultLayout },
+     { path: '/login', element: Login, layout: null },
+     { path: '/register', element: Register, layout: null },
 ]
 
 const adminRoutes = [
@@ -24,10 +24,7 @@ const adminRoutes = [
           children: [
                { path: 'dashboard', element: Dashboard, layout: null }
           ]
-     },
-     { path: '/', element: Home },
-     { path: '/login', element: Login },
-     { path: '/register', element: Register }
+     }
 ]
 
 export { adminRoutes, publicRoutes, renderRoutes }
